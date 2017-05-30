@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     autoprefixer = require('gulp-autoprefixer'),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    watch = require('gulp-watch');
 
 gulp.task('default', function() {
     runSequence(
@@ -28,4 +29,10 @@ gulp.task('semantic-base', function() {
     .pipe(minifyCSS({
         keepSpecialComments: false
     }))
+});
+
+
+gulp.task('stream', function() {
+    return watch('public/sass/**/*.sass', { ignoreInitial: false })
+        .pipe(gulp.dest('./web/css/'))
 });
