@@ -1,3 +1,22 @@
 /*! This is for components 'Navbar' */
 .navbar
+    padding: 8px 150px
+
+.navbar-nav
+    font-weight: 300
+    font-size: .9em
+
+.nav-link
     color: $base-color
+    font-size: .9em
+    @extend .text-semi-condensed
+
+.navbar-upper
+    .nav-link
+        &:not(.searchbar)
+            color: $base-color !important
+
+.searchbar_input
+    display: none
+    border: none
+    border-bottom: 1px solid #ccc

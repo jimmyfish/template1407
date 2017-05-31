@@ -35,13 +35,22 @@ gulp.task('semantic-base', function() {
 
 gulp.task('style', function() {
     gulp.src('public/sass/base.sass')
+    .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(concat('base.min.css'))
+    .pipe(concat('app.min.css'))
     // .pipe(autoprefixer())
     .pipe(minifyCSS({
         keepSpecialComments: false
     }))
+    .pipe(sourcemaps.write('maps/'))
     .pipe(gulp.dest('./web/css/'))
+});
+
+gulp.task('script', function() {
+    gulp.src('public/js/global.js')
+    .pipe(concat('app.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./web/js/'))
 });
 
 
@@ -55,5 +64,6 @@ gulp.task('serve', function() {
     server: "./"
   });
   gulp.watch("./public/sass/**/*.sass", ['style']).on('change', browserSync.reload);
+  gulp.watch("./public/js/**/*.js", ['script']).on('change', browserSync.reload);
   gulp.watch("./pages/**/*.html").on('change', browserSync.reload);
 });

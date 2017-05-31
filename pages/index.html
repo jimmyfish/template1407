@@ -6,40 +6,113 @@
     <title>Index.html</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="/web/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/web/css/base.min.css">
+    <link rel="stylesheet" href="/web/css/app.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <a class="navbar-brand" href="#">Template <small>3105</small></a>
+        <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="mr-auto">&nbsp;</ul>
+            <ul class="navbar-nav navbar-upper">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link"><small>or</small></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item form-inline">
+                    <input type="text" class="searchbar_input">
+                    <a class="nav-link searchbar" href="#"><i class="fa fa-search"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top shadowed">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
 
             </span>
         </button>
-        <a class="navbar-brand" href="#">Navbar</a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Order</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#">Navigation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Offer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="form-inline my-2 my-lg-0">
+                <a href="#" class="btn btn-outline-base btn-sm text-normal">Learn more</a>
+            </div>
         </div>
     </nav>
 
+    <section class="content">
+        <div class="container">
+            <div class="item">
+                <h4 class="category mb20"># Pinned today</h4>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="https://dummyimage.com/1366x768/bdc3c7/7f8c8d" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <h3 class="item-title">
+                            Bring back the memory from the past
+                        </h3>
+                        <p class="item-date">Thursday, 1 June 2017</p>
+                        <div class="row">
+                            <div class="post-owner">
+                                <div class="col-sm-3">
+                                    <figure class="figure">
+                                        <img src="https://dummyimage.com/128x128/bdc3c7/7f8c8d.png" alt="" class="figure-img img-fluid post-owner-figure">
+
+                                    </figure>
+                                </div>
+                                <div class="col-sm-8">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
     <script src="../web/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="../web/js/app.min.js" charset="utf-8"></script>
 </body>
 
 </html>
