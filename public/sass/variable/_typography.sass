@@ -3,6 +3,18 @@ small
 
 a
     color: $base-color
+    text-decoration: none
+    transition: all .4s ease
+
+    &.no-color
+        color: $color
+
+    &:hover
+        text-decoration: none
+
+a:hover:not(.no-color)
+    color: lighten($base-color, 10%)
+    transition: all .4s ease
 
 .text-uppercase
     text-transform: uppercase

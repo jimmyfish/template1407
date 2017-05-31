@@ -16,7 +16,14 @@
         &:not(.searchbar)
             color: $base-color !important
 
-.searchbar_input
-    display: none
-    border: none
-    border-bottom: 1px solid #ccc
+        small
+            color: lighten($color, 25%)
+
+.form-inline
+    margin-top: -10px
+    margin-left: 20px
+
+    .searchbar_input
+        display: none
+        border: none
+        border-bottom: 1px solid $base-color
