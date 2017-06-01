@@ -30,6 +30,12 @@
                 font-weight: 600
                 font-stretch: ultra-condensed
 
+            .item-date
+                color: lighten($color, 35%)
+                font-size: .8em
+                font-weight: 300
+                margin-bottom: 0
+
             .post-owner
                 max-height: 52px
 
@@ -47,13 +53,22 @@
                 .owner-name
                     margin-top: 4px
 
-                .item-date
+                .owner-role
                     color: lighten($color, 35%)
                     font-size: .8em
                     font-weight: 300
 
+
             .item-description
                 font-weight: 300
+
+            &.item-block
+                .img-pinned
+                    width: 100%
+                    max-height: 400px
+                    height: auto
+                    object-fit: cover
+
 
             &.item-inline
 
@@ -83,3 +98,8 @@
                 .post-owner
                     .col-sm-10
                         padding-left: 35px
+
+        .load-more
+            width: 100%
+            margin: 50px auto
+            text-align: center

@@ -12,9 +12,27 @@ a
     &:hover
         text-decoration: none
 
-a:hover:not(.no-color)
+a:hover:not(.btn),
+a:active:not(.btn),
+a:focus:not(.btn)
+    text-decoration: none
     color: lighten($base-color, 10%)
     transition: all .4s ease
+
+.container:not(.post-owner)
+    a
+        color: $color
+
+    a:hover,
+    a:active,
+    a:focus
+        color: lighten($color, 10%)
+        transition: none
+
+.post-owner,
+.load-more
+    a
+        color: $base-color !important
 
 .text-uppercase
     text-transform: uppercase

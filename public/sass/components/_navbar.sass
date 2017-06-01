@@ -2,6 +2,19 @@
 .navbar
     padding: 8px 150px
 
+.navbar-light
+
+    .navbar-nav
+        .nav-link
+            color: rgba(0,0,0,0.7)
+            font-weight: 400
+
+        .active
+
+            &>.nav-link
+                color: #000
+                font-weight: 600
+
 .navbar-nav
     font-weight: 300
     font-size: .9em
@@ -27,3 +40,6 @@
         display: none
         border: none
         border-bottom: 1px solid $base-color
+
+.sticky-top
+    // border-bottom: 1px solid #d7d7d7
