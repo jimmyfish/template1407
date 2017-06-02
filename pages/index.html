@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Index.html</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
-        <!-- FONT AWESOME -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../web/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../web/css/app.min.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index.html</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../web/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../web/css/app.min.css">
+</head>
+
+<body>
+    <nav class="sticky-top" id="navbar-wrapper">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="brand">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
             <a class="navbar-brand" href="#">Template <small>3105</small></a>
-            <div class="navbar-collapse" id="navbarSupportedContent">
-            <ul class="mr-auto">&nbsp;</ul>
-            <ul class="navbar-nav navbar-upper">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign up</a>
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link"><small>or</small></span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-                <li class="nav-item form-inline">
-                    <input type="text" class="searchbar_input">
-                    <a class="nav-link searchbar" href="#"><i class="fa fa-search"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top shadowed">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-        </span>
-        </button>
-        <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Order</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Navigation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Article</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tutorial</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Customer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Offer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
-            <div class="form-inline my-2 my-lg-0">
-                <a href="#" class="btn btn-outline-base btn-sm text-normal">Learn more</a>
+            <div class="navbar-collapse" id="navbar-upper-brand">
+                <ul class="mr-auto">&nbsp;</ul>
+                <ul class="navbar-nav navbar-upper">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link"><small>or</small></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item form-inline">
+                        <input type="text" class="searchbar_input">
+                        <a class="nav-link searchbar" href="#"><i class="fa fa-search"></i></a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="mainNavbarWrapper">
+            <div class="collapse navbar-collapse text-uppercase" id="mainNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Navigation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="#" class="btn btn-outline-base btn-sm text-normal">Learn more</a>
+                </div>
+            </div>
+        </nav>
     </nav>
+
     <section class="content">
         <div class="container">
             <!-- TITLE PER SECTION -->
@@ -93,12 +99,12 @@
                             <p class="item-description">Living creature will know how about we live and die through this world just only to remember our past.</p>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-sm-2 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-sm-10 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="owner-role">Member</p>
                                     </div>
@@ -109,7 +115,7 @@
                 </div>
                 <div class="item item-inline">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-4 col-sm-6 col-xs-12 item-inner">
                             <a href="#" class="no-color">
                                 <img src="https://s-media-cache-ak0.pinimg.com/originals/af/30/d6/af30d6778322533c3d53224a524ab1d8.jpg" alt="" class="img-fluid post-img">
                                 <h5 class="item-title">Clear out your bore day</h5>
@@ -117,19 +123,19 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-md-2 col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-md-10 col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-4 col-sm-6 col-xs-12 item-inner">
                             <a href="#" class="no-color">
                                 <img src="http://1.bp.blogspot.com/-VyQWJs0O6cw/UZjqruM7JwI/AAAAAAAAAQA/lnXeDuyVrgE/s1600/fresh_vegetables_in_basket-2560x1600.jpg" alt="" class="img-fluid post-img">
                                 <h5 class="item-title">Clear out your bore day</h5>
@@ -137,19 +143,19 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-md-2 col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-md-10 col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-4 col-sm-6 col-xs-12 item-inner">
                             <a href="#" class="no-color">
                                 <img src="https://s-media-cache-ak0.pinimg.com/originals/af/30/d6/af30d6778322533c3d53224a524ab1d8.jpg" alt="" class="img-fluid post-img">
                                 <h5 class="item-title">Clear out your bore day</h5>
@@ -157,12 +163,12 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-md-2 col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-md-10 col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
@@ -190,6 +196,7 @@
                         </div>
                         <div class="col">
                             <a href="#" title="">
+                                <p class="item-date">Friday, 2 June 2017</p>
                                 <h2 class="item-title">
                                 Bring back the memory from the past
                                 </h2>
@@ -197,12 +204,12 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-sm-2 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-md-10 col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
@@ -213,7 +220,7 @@
                 </div>
                 <div class="item item-inline dual">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12 item-inner">
                             <a href="#" class="no-color">
                                 <img src="https://s-media-cache-ak0.pinimg.com/originals/af/30/d6/af30d6778322533c3d53224a524ab1d8.jpg" alt="" class="img-fluid post-img">
                                 <h5 class="item-title">Clear out your bore day</h5>
@@ -221,19 +228,19 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-md-2 col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-md-10 col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12 item-inner">
                             <a href="#" class="no-color">
                                 <img src="http://1.bp.blogspot.com/-VyQWJs0O6cw/UZjqruM7JwI/AAAAAAAAAQA/lnXeDuyVrgE/s1600/fresh_vegetables_in_basket-2560x1600.jpg" alt="" class="img-fluid post-img">
                                 <h5 class="item-title">Clear out your bore day</h5>
@@ -241,19 +248,19 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-md-2 col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-md-10 col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="load-more">
@@ -278,12 +285,12 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
@@ -298,12 +305,12 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
@@ -318,12 +325,12 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
@@ -338,19 +345,19 @@
                             </a>
                             <div class="post-owner">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2">
+                                    <div class="col-sm-3 col-xs-2 figure-wrapper">
                                         <figure class="figure">
                                             <img src="http://ods2016.org/wp-content/uploads/2015/04/speaker-1-v2-300x300.jpg" alt="" class="figure-img post-owner-figure">
                                         </figure>
                                     </div>
-                                    <div class="col-sm-10 col-xs-10">
+                                    <div class="col-sm-9 col-xs-10 meta-wrapper">
                                         <p class="owner-name"><a href="#">Alina Valerie</a></p>
                                         <p class="item-date">1 June</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="load-more">
@@ -364,11 +371,7 @@
     <footer id="footer">
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
             <a class="navbar-brand" href="#">Template <small>3105</small></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-            </span>
-            </button>
-            <div class="text-uppercase" id="navbarSupportedContent">
+            <div class="text-uppercase" id="footerNavbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
@@ -408,4 +411,5 @@
     <script src="../web/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="../web/js/app.min.js" charset="utf-8"></script>
 </body>
+
 </html>
