@@ -1,0 +1,48 @@
+#articles
+    font-weight: 300
+
+    .wrap
+        background-color: #fff
+        border-radius: 3px
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2)
+        min-width: 100%
+        width: auto
+        height: auto
+
+        &.pinned
+            padding: 270px 40px 40px
+            background-repeat: no-repeat !important
+            background-position: 50% 50% !important
+
+            .post-title,
+            .post-subtitle
+                color: $color-inverse
+
+            .post-title
+                font-weight: 600
+
+        &.no-picture
+            padding: 10px
+            font-size: .8em
+
+        .tint
+            position: relative
+            float: left
+            margin-right: 20px
+            margin-bottom: 20px
+    
+            &:before
+                content: ""
+                display: block
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                background: rgba(0,255,255, 0.5)
+                transition: all .3s linear
+
+            &:hover
+                &:before
+                    background: none
+

@@ -1,6 +1,5 @@
 $(function() {
     var width = $(window).width();
-    console.log(width);
 
     $('.searchbar').click(function(e) {
         e.preventDefault()
@@ -9,6 +8,7 @@ $(function() {
 
     $(window).scroll(function() {
     	var navbar = $('.sticky-top');
+
         if ($(window).scrollTop() > 0) {
             navbar
                 .addClass('shadowed');

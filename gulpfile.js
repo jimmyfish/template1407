@@ -15,24 +15,6 @@ gulp.task('default', function() {
     );
 });
 
-gulp.task('semantic', function() {
-    runSequence(
-        'semantic-base',
-        'semantic-theme'
-    );
-});
-
-gulp.task('semantic-base', function() {
-    gulp.src('public/dist/semantic/semantic.less')
-    .pipe(less())
-    .pipe(concat('semantic.min.css'))
-    .pipe(autoprefixer())
-    .pipe(minifyCSS({
-        keepSpecialComments: false
-    }))
-    .pipe(gulp.dest('./web/css/'))
-});
-
 gulp.task('style', function() {
     gulp.src('public/sass/base.sass')
     .pipe(sourcemaps.init())
