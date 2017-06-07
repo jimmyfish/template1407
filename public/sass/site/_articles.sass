@@ -1,5 +1,9 @@
 #articles
     font-weight: 300
+    margin-top: 50px
+
+    [id^='group-']
+        margin-top: 50px
 
     .wrap
         background-color: #fff
@@ -9,9 +13,29 @@
         width: auto
         height: auto
         margin-bottom: 20px
+        overflow: hidden
 
         .post-title
             font-weight: 600
+
+        .post-meta
+            max-height: 128px
+            height: 128px
+            overflow: hidden
+
+            .post-title
+                margin-bottom: 10px
+                font-size: 1.1em
+                line-height: 25px
+                max-height: 50px
+                overflow: hidden
+
+            .post-subtitle
+                font-size: .9em
+                color: $color-lighten
+                line-height: 25px
+                max-height: 50px
+                overflow: hidden
 
         &.pinned
             padding: 270px 40px 40px
@@ -26,31 +50,18 @@
         &.no-picture
             padding: 20px
 
-            .post-meta
-                max-height: 128px
-                height: 128px
-                overflow: hidden
-
-                .post-title
-                    margin-bottom: 10px
-                    font-size: 1.1em
-                    line-height: 25px
-                    max-height: 50px
-                    overflow: hidden
-
-                .post-subtitle
-                    font-size: .9em
-                    color: $color-lighten
-                    line-height: 25px
-                    max-height: 50px
-                    overflow: hidden
-
             .post-owner-figure
                 border: 1px solid lighten($base-color, 20%)
 
             .meta-wrapper
                 .item-date
                     color: $color-lighten
+
+        &.inline-picture
+            padding-left: 0
+            
+            .content-wrapper
+                padding: 20px
 
         .tint
             position: relative
