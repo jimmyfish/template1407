@@ -21,9 +21,6 @@ gulp.task('style', function() {
     .pipe(sass())
     .pipe(concat('app.min.css'))
     // .pipe(autoprefixer())
-    .pipe(minifyCSS({
-        keepSpecialComments: false
-    }))
     .pipe(sourcemaps.write('maps/'))
     .pipe(gulp.dest('./web/css/'))
 });
